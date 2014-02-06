@@ -1,0 +1,115 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.container{
+  height: 500px;
+  min-width: 1800px;
+  overflow-x: scroll;
+  padding: 20px;
+
+}
+#addNewListForm{
+  display: none;
+}
+
+.btn{
+  box-shadow:inset 0px 1px 0px 0px #fce2c1;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+  background-color:#ffc477;
+  border-radius: 5px;
+  border:1px solid #eeb44f;
+  display:inline-block;
+  color:#ffffff;
+  font-size:14px;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;å
+  text-align:center;
+  text-shadow:1px 1px 0px #cc9f52;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin:20px 10px;
+}
+.btn:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+  background-color:#fb9e25;
+}.btn:active {
+  position:relative;
+  top:1px;
+}
+input{
+  padding: 5px 10px;
+  font-size: .9em;
+  font-weight: normal;
+}
+form{
+  margin: 10px;
+}
+.list{
+  background: #fff;
+  width: 300px;
+  float: left;
+  border: 1px solid #aaa;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #eee;
+
+}
+.list.addNewList{
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
+  cursor: pointer;
+}
+.list h1{
+  border-bottom: 1px solid #eee;
+  margin: 7px 0;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+}
+.list ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list li{
+  list-style-type: none;
+  position: relative;
+  border: 1px #aaa solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 3px;
+  cursor: move;
+}
+.list h2{
+  font-size: .8em;
+  margin: 0;
+}
+.list p{
+  font-size: .7em;
+}
+.list .delete,.list .edit{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: .8em;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.list:hover .delete,.list:hover .edit{
+  color:#888;
+}
+.list .delete:hover{
+  color:#f00;
+}
+.list .edit:hover{
+  color:#00f;
+}
+.list .edit{
+  right: 25px;
+}
